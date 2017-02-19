@@ -315,12 +315,15 @@ footer {
 header, nav {
 	margin: 0px;
 	padding: 0px;
+	border-bottom-style: solid;
+	border-color: #dddddd;
+	border-width: 2px;
+
 }
 
 #logo, #menu {
 	text-align: center;
 	margin: 0px;
-	padding: 0px;
 	position: static;
 	width: 100%;
 	clear: both;
@@ -328,12 +331,19 @@ header, nav {
 	line-height: 40px;
 }
 
+#menu {
+	padding: 0px;
+}
+
 li {
 	padding: 0px 25px 0px 25px;
 }
 
 h2 {
-	padding: 10px 0px 0px 20px;
+	padding: 10px 0px 10px 0px;
+	border-bottom-style: solid;
+	border-color: #dddddd;
+	border-width: 2px;
 }
 
 h3 {
@@ -347,6 +357,7 @@ h3 {
 
 #logo {
 	font-size: 16px;
+	padding: 10px 0px 10px 0px;
 }
 
 #menu, nav {
@@ -359,10 +370,10 @@ h3 {
 }
 
 #about-me, #portfolio, #contact, #connect {
-	width: 400px;
+	width: 380px;
 	float: left;
 	margin: 50px 10px 10px 10px;
-	padding: 10px;
+	padding: 10px 20px 10px 20px;
 }
 
 #connect {
@@ -373,20 +384,15 @@ h3 {
 }
 
 img {
-	width: 360px;
-	height: 270px;
+	width: 378px;
+	height: 283px;
 }
 
 #profile-pic {
 	float: left;
-	width: 360px;
-	height: 468px;
-	margin: 15px 20px 0px 20px;
-}
-
-p {
-	float: left;
-	margin: 10px 20px 10px 20px;
+	width: 378px;
+	height: 491px;
+	margin: 20px 0px 0px 0px;
 }
 
 .social-img {
@@ -398,28 +404,47 @@ p {
 
 input[type=text], textarea {
 	clear: both;
+	font-size: 12px;
+	line-height: 16px;
 	width: 350px;
-	padding: 5px;
-	margin: 5px;
+	margin: 5px 0px 0px 0px;
+	padding: 10px;
 }
 
 input[type=submit] {
 	font-size: 12px;
-	line-height: 18px;
-	margin: 5px;
+	line-height: 16px;
+	margin: 10px 0px 10px 0px;
+	padding: 5px 15px 5px 15px;
 }
 
 .portfolio-images-left, .portfolio-images-right {
 	float: left;
-	height: 270px;
-	width: 360px;
-	margin: 15px 20px 15px 20px;
+	height: 283px;
+	width: 378px;
+	margin: 20px 0px 15px 0px;
 }
 
 .portfolio-images-text {
 	position: absolute;
 	bottom: 10px;
-	width: 330px;
+	width: 348px;
 }
 
+p {
+	float: left;
+	margin: 10px 0px 10px 0px;
+}
+
+.contact-form {
+	font-size: 12px;
+	line-height: 16px;
+	margin: 20px 0px 0px 0px;
+}
+
+footer {
+	bottom: -100px;
+}
+
+/*Do not delete me!*/
 }
