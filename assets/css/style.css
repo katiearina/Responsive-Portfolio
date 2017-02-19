@@ -1,0 +1,425 @@
+/* Decided against adding the reset since it was pretty late 
+in the game (I wish I would have had it from the beginning though! 
+I like resets! I did need to use some browser style-overriding 
+in order to make my header and "footer" actually reach the edges */
+html {
+	margin: 0px;
+	padding: 0px;
+}
+
+/* This is to make the content the correct size and increase/decrease
+both left and right margins accordingly as page is stretched/shrunk */
+#wrapper {
+	width: 960px;
+	min-height: 100%;
+	margin: 0 auto 0 auto;
+	position: relative;
+	overflow: auto;
+	margin-bottom: 100px;
+}
+
+/* This could probably be cleaned up, especially with a reset, but this
+is to set some defaults for the body content styling */
+body {
+	height: 100%;
+	position: relative;
+	overflow: auto;
+	top: 70px;
+	font-family: 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+	color: #777777;
+	background-image: url("../images/seigaiha.png");
+	margin: 0px;
+	padding: 0px;
+}
+
+/* Page Header/Nav Bar */
+header {
+	clear: both;
+	height: 80px;
+	position: fixed;
+	top: 0px;
+	background-color: #ffffff;
+	width: 100%;
+	border-color: #cccccc;
+	border-bottom-style: solid;
+	z-index: 2;
+}
+
+/* Logo Heading */
+#logo {
+	float: left;
+	position: fixed;
+	font-size: 24px;
+	line-height: 40px;
+	font-weight: bold;
+	left: 100px;
+	height: 40px;
+	padding: 20px;
+	width: 230px;
+	background-color: #4aaaa5;
+	text-align: center;
+	color: #ffffff;
+	font-family: 'Georgia', 'Times', 'Times New Roman', serif;
+	z-index: 1;
+}
+
+/* Section Title Heading */
+h2 {
+	color: #4aaaa5;
+	font-size: 20px;
+	line-height: 30px;
+	font-weight: bold;
+	font-family: 'Georgia', 'Times', 'Times New Roman', serif;
+	padding: 10px 0px 20px 0px;
+	border-bottom-style: solid;
+	border-color: #dddddd;
+}
+
+/* Social Link/Connect Heading */
+h3 {
+	color: #4aaaa5;
+	font-size: 18px;
+	font-weight: bold;
+	font-family: 'Georgia', 'Times', 'Times New Roman', serif;
+	padding: 10px 0px 20px 0px;
+	border-bottom-style: solid;
+	border-color: #dddddd;
+	border-width: 1px;
+}
+
+/* Connect Section */
+#connect {
+	float: right;
+	width: 228px;
+	margin-top: 50px;
+	background-color: #ffffff;
+	text-align: center;
+	padding: 0px 20px 0px 20px;
+	z-index: -1;
+	border-style: solid;
+	border-color: #dddddd;
+	border-width: 1px;
+}
+
+.social-img {
+	padding: 15px 0px 10px 0px;
+}
+
+/* Portfolio Overlay Headings */
+h4 {
+	background-color: #4aaaa5;
+	font-size: 16px;
+	font-weight: bold;
+	color: #ffffff;
+	padding: 10px 0px 20px 0px;
+	font-family: 'Georgia', 'Times', 'Times New Roman', serif;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+/* Navigation Menu Section */
+#menu {
+	float: right;
+	position: fixed;
+	font-size: 14px;
+	right: 100px;
+	height: 60px;
+	line-height: 60px;
+	padding: 10px;
+	width: 230px;
+	background-color: #ffffff;
+	text-align: center;
+	font-family: 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
+	font-size: 14px;
+	z-index: 0;
+}
+
+/* Navigation List Items */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    padding: 10px;
+}
+
+/* Styling on Links */
+a:link, a:visited, a:hover {
+	color: #777777;
+	text-decoration: none;
+}
+
+/* Text color change on hover to match page coloring */
+a:hover {
+	color: #4aaaa5;
+}
+
+/* Profile Photo for About page */
+#profile-pic {
+	float: left;
+	height: 200px;
+	width: 154px;
+	margin: 10px 20px 5px 0px;
+	border-style: solid;
+	border-color: #dddddd;
+	border-width: 1px;
+}
+
+/* Specific styling for top paragraph on About page */
+#profile-text-top {
+	margin-top: 25px;
+}
+
+/* Content Styling */
+#about-me, #portfolio, #contact {
+	float: left;
+	width: 588px;
+	margin-top: 50px;
+	padding: 0px 30px 30px 30px;
+	background-color: #ffffff;
+	z-index: -1;
+	border-style: solid;
+	border-color: #dddddd;
+	border-width: 1px;
+}
+
+/* Contact Form (Name & Email Sections) */
+input[type=text] {
+	width: 570px;
+	margin-bottom: 15px;
+	padding: 5px 10px 5px 10px;
+	outline: none;
+	resize: none;
+	border-style: solid;
+	border-color: #dddddd;
+	border-width: 1px;
+	font-family: 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
+	font-size: 12px;
+	line-height: 20px;
+	color: #777777;
+}
+
+/* Contact Form (Message Section) */
+textarea {
+	width: 570px;
+	height: 200px;
+	padding: 5px 10px 5px 10px;
+	outline: none;
+	resize: none;
+	border-style: solid;
+	border-color: #dddddd;
+	border-width: 1px;
+	font-family: 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
+	font-size: 12px;
+	line-height: 20px;
+	color: #777777;
+}
+
+/* Submit Button */
+input[type=submit] {
+	background-color: #4aaaa5;
+	color: #ffffff;
+	margin-top: 20px;
+	padding: 5px 15px 5px 15px;
+	font-family: 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
+	border: none;
+	font-size: 14px;
+	line-height: 24px;
+	outline: none;
+}
+
+/* Portfolio Images; split up by side in order to float 
+properly */
+.portfolio-images-left, .portfolio-images-right {
+	float: left;
+	position: relative;
+	height: 195px;
+	width: 260px;
+	padding: 0px;
+	margin: 15px;
+	z-index: 0;
+	border-style: solid;
+	border-color: #dddddd;
+	border-width: 1px;
+}
+
+.portfolio-images-right {
+	float: right;
+}
+
+/* Portfolio Text Overlay */
+.portfolio-images-text {
+	position: absolute;
+	bottom: -10px;
+	left: 0px;
+	width: 230px;
+	background-color: #4aaaa5;
+	color: #ffffff;
+	padding: 5px 15px 5px 15px;
+	text-align: center;
+	font-family: 'Georgia', 'Times', 'Times New Roman', serif;
+}
+
+/* Imperfect attempt at a footer. I tried multiple ways and this was the
+closest I got that didn't jump halfway up the page with no content or
+overlay the content if I expanded the number of paragraphs. It sounds like
+using Flexbox is the real answer (maybe?) but that felt like some sort of 
+too-advanced magic form of cheating, so I just did my best with what I had.
+This footer breaks when you shrink the page size down (e.g. 50%) or view on
+mobile, but I'm still prous that I was able to try multiple ways and figure
+out ways to break them all. It sounds silly, but I'd rather find those on my
+own than thinking something works and finding out it doesn't. I realize this
+won't always happen, but this is the best I can do for now and I'm pretty okay
+with that with only a week of classroom learnin'. Long comment now over! */
+footer {
+	position: absolute;
+	clear: both;
+	width: 100%;
+	padding: 15px 0px 15px 0px;
+	bottom: -450px;
+	z-index: 2;
+	background: #666666;
+	font-size: 12px;
+	color: #cccccc;
+	text-align: center;
+	border-top-style: solid;
+	border-width: 6px;
+	border-color: #4aaaa5;
+}
+
+
+/* Additional Screen Sizes */
+
+/* Width at 980px (Desktop) and below */
+@media screen and (max-width: 980px) {
+
+
+}
+
+
+/* Width at 768px (Tablet) and below */
+@media screen and (max-width: 768px) {
+
+
+}
+
+
+/* Width at 640px (Cell Phone) and below */
+@media screen and (max-width: 640px) {
+
+header, nav {
+	margin: 0px;
+	padding: 0px;
+}
+
+#logo, #menu {
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+	position: static;
+	width: 100%;
+	clear: both;
+	height: 40px;
+	line-height: 40px;
+}
+
+li {
+	padding: 0px 25px 0px 25px;
+}
+
+h2 {
+	padding: 10px 0px 0px 20px;
+}
+
+h3 {
+	text-align: left;
+	clear: both;
+	padding: 5px;
+	border-bottom-style: solid;
+	border-color: #dddddd;
+	border-width: 1px;
+}
+
+#logo {
+	font-size: 16px;
+}
+
+#menu, nav {
+	font-size: 12px;
+}
+
+#wrapper {
+	width: 440px;
+	margin: 0 auto 0 auto;
+}
+
+#about-me, #portfolio, #contact, #connect {
+	width: 400px;
+	float: left;
+	margin: 50px 10px 10px 10px;
+	padding: 10px;
+}
+
+#connect {
+	width: 380px;
+	float: left;
+	margin-top: 10px;
+	padding: 10px 20px 10px 20px;
+}
+
+img {
+	width: 360px;
+	height: 270px;
+}
+
+#profile-pic {
+	float: left;
+	width: 360px;
+	height: 468px;
+	margin: 15px 20px 0px 20px;
+}
+
+p {
+	float: left;
+	margin: 10px 20px 10px 20px;
+}
+
+.social-img {
+	float: left;
+	padding: 15px 5px 5px 5px;
+	width: 36px;
+	height: 36px;
+}
+
+input[type=text], textarea {
+	clear: both;
+	width: 350px;
+	padding: 5px;
+	margin: 5px;
+}
+
+input[type=submit] {
+	font-size: 12px;
+	line-height: 18px;
+	margin: 5px;
+}
+
+.portfolio-images-left, .portfolio-images-right {
+	float: left;
+	height: 270px;
+	width: 360px;
+	margin: 15px 20px 15px 20px;
+}
+
+.portfolio-images-text {
+	position: absolute;
+	bottom: 10px;
+	width: 330px;
+}
+
+}
