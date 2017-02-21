@@ -110,7 +110,6 @@ h3 {
 /* Portfolio Overlay Headings */
 h4 {
 	background-color: #4aaaa5;
-	font-size: 16px;
 	font-weight: bold;
 	color: #ffffff;
 	padding: 10px 0px 20px 0px;
@@ -255,7 +254,7 @@ properly */
 /* Portfolio Text Overlay */
 .portfolio-images-text {
 	position: absolute;
-	bottom: -10px;
+	bottom: 10px;
 	left: 0px;
 	width: 230px;
 	background-color: #4aaaa5;
@@ -292,27 +291,168 @@ footer {
 	border-color: #4aaaa5;
 }
 
-
+/*-----------------------------------------------------------------*/
 /* Additional Screen Sizes */
-
+/*-----------------------------------------------------------------*/
 /* Width at 980px (Desktop) and below */
 @media screen and (max-width: 980px) {
 
 
+/*Do not delete me!*/
 }
 
-
+/*-----------------------------------------------------------------*/
 /* Width at 768px (Tablet) and below */
 @media screen and (max-width: 768px) {
 
-
+header, nav {
+	margin: 0px;
+	padding: 0px;
+	border-bottom-style: solid;
+	border-color: #dddddd;
+	border-width: 2px;
 }
 
+#logo, #menu {
+	text-align: center;
+}
 
+#logo {
+	left: 20px;
+	padding: 20px 10px 20px 10px;
+}
+
+#menu {
+	right: 10px;
+}
+
+li {
+	padding: 0px 10px 0px 10px;
+}
+
+h2 {
+	border-bottom-style: solid;
+	border-color: #dddddd;
+	border-width: 3px;
+}
+
+h3 {
+	text-align: left;
+	clear: both;
+	padding: 10px;
+	border-bottom-style: solid;
+	border-color: #dddddd;
+	border-width: 1px;
+}
+
+#wrapper {
+	width: 728px;
+	margin: 0 auto 0 auto;
+}
+
+#about-me, #portfolio, #contact, #connect {
+	width: 668px;
+	float: left;
+}
+
+#about-me, #portfolio, #contact {
+	margin: 50px 10px 10px 10px;
+	padding: 10px 20px 10px 20px;
+}
+
+#connect {
+	margin: 20px 10px 10px 10px;
+	padding: 10px 20px 10px 20px;
+}
+
+#portfolio {
+	padding-bottom: 20px;
+}
+
+img {
+	width: 314px;
+	height: 235px;
+}
+
+#profile-pic {
+	float: left;
+	width: 334px;
+	height: 434px;
+	margin: 26px 20px 0px 0px;
+}
+
+.social-img {
+	float: left;
+	padding: 15px 5px 5px 5px;
+	width: 48px;
+	height: 48px;
+}
+
+input[type=text], textarea {
+	clear: both;
+	font-size: 12px;
+	line-height: 16px;
+	width: 646px;
+	margin: 5px 0px 0px 0px;
+	padding: 5px;
+}
+
+input[type=submit] {
+	font-size: 12px;
+	line-height: 18px;
+	margin: 10px 0px 10px 0px;
+	padding: 5px 20px 5px 20px;
+}
+
+.portfolio-images-left, .portfolio-images-right {
+	width: 314px;
+	height: 235px;
+	margin: 30px 0px 10px 0px;
+}
+
+.portfolio-images-left {
+	float: left;
+	margin-left: 2px;
+}
+
+.portfolio-images-right {
+	float: right;
+	margin-right: 2px;
+}
+
+.portfolio-images-text {
+	position: absolute;
+	bottom: 10px;
+	width: 284px;
+	padding: 10px 15px 10px 15px;
+}
+
+h4 {
+	font-size: 16px;
+}
+
+p {
+	margin: 10px 0px 10px 0px;
+}
+
+.contact-form {
+	font-size: 12px;
+	line-height: 16px;
+	margin: 20px 0px 0px 0px;
+}
+
+footer {
+	bottom: -200px;
+}
+
+/*Do not delete me!*/
+}
+
+/*-----------------------------------------------------------------*/
 /* Width at 640px (Cell Phone) and below */
 @media screen and (max-width: 640px) {
 
-header, nav {
+header {
 	margin: 0px;
 	padding: 0px;
 	border-bottom-style: solid;
@@ -365,33 +505,33 @@ h3 {
 }
 
 #wrapper {
-	width: 440px;
+	width: 600px;
 	margin: 0 auto 0 auto;
 }
 
 #about-me, #portfolio, #contact, #connect {
-	width: 380px;
+	width: 540px;
 	float: left;
 	margin: 50px 10px 10px 10px;
 	padding: 10px 20px 10px 20px;
 }
 
 #connect {
-	width: 380px;
+	width: 540px;
 	float: left;
 	margin-top: 10px;
 	padding: 10px 20px 10px 20px;
 }
 
 img {
-	width: 378px;
-	height: 283px;
+	width: 538px;
+	height: 403px;
 }
 
 #profile-pic {
 	float: left;
-	width: 378px;
-	height: 491px;
+	width: 538px;
+	height: 699px;
 	margin: 20px 0px 0px 0px;
 }
 
@@ -406,7 +546,7 @@ input[type=text], textarea {
 	clear: both;
 	font-size: 12px;
 	line-height: 16px;
-	width: 350px;
+	width: 510px;
 	margin: 5px 0px 0px 0px;
 	padding: 10px;
 }
@@ -420,15 +560,15 @@ input[type=submit] {
 
 .portfolio-images-left, .portfolio-images-right {
 	float: left;
-	height: 283px;
-	width: 378px;
+	height: 403px;
+	width: 538px;
 	margin: 20px 0px 15px 0px;
 }
 
 .portfolio-images-text {
 	position: absolute;
 	bottom: 10px;
-	width: 348px;
+	width: 508px;
 }
 
 p {
@@ -443,7 +583,7 @@ p {
 }
 
 footer {
-	bottom: -100px;
+	bottom: -200px;
 }
 
 /*Do not delete me!*/
