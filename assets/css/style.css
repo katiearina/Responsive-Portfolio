@@ -649,14 +649,19 @@ footer {
 /* Width at 640px (Cell Phone) and below */
 @media screen and (max-width: 640px) {
 
-/* Used position:static for #logo/#menu, but it drops top down
-significantly when used in this section. Not sure why? */
+/* Header positioning */
 header {
+	position: static;
 	margin: 0px;
 	padding: 0px;
 	border-bottom-style: solid;
 	border-color: #dddddd;
 	border-width: 2px;
+}
+
+/* Works with static position of header */
+body {
+	top: 0px;
 }
 
 /* Drops menu/link section of navbar below logo/brand part of navbar */
