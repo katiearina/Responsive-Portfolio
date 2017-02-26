@@ -270,7 +270,7 @@ overlay the content if I expanded the number of paragraphs. It sounds like
 using Flexbox is the real answer (maybe?) but that felt like some sort of 
 too-advanced magic form of cheating, so I just did my best with what I had.
 This footer breaks when you shrink the page size down (e.g. 50%) or view on
-mobile, but I'm still prous that I was able to try multiple ways and figure
+mobile, but I'm still proud that I was able to try multiple ways and figure
 out ways to break them all. It sounds silly, but I'd rather find those on my
 own than thinking something works and finding out it doesn't. I realize this
 won't always happen, but this is the best I can do for now and I'm pretty okay
@@ -293,10 +293,20 @@ footer {
 
 /*-----------------------------------------------------------------*/
 /* Additional Screen Sizes */
+/* Note: I didn't use the reset.css on my Week 1 homework (due to the
+late timing of it), so the page doesn't look stellar/quite right if it
+is larger than the 980px resolution specified in this activity. I could
+probably have fixed this but felt that the responsive part of the homework 
+was more important to spend time on. I had to add the reset into this 
+homework since certain browser defaults did odd things to the responsive 
+aspects of the homework. Just wanted to note this since it will look
+different than what I turned in for Week 1 at resolutions greater than
+980px even though the original CSS is otherwise (mostly) the same. */
 /*-----------------------------------------------------------------*/
 /* Width at 980px (Desktop) and below */
 @media screen and (max-width: 980px) {
 
+/* Background styling for navbar area */
 header, nav {
 	margin: 0px;
 	padding: 0px;
@@ -305,25 +315,32 @@ header, nav {
 	border-width: 2px;
 }
 
+/* Styling for navbar text items */
 #logo, #menu {
 	text-align: center;
 }
 
+/* Styling for logo to sit left-justified with main content area */
 #logo {
 	left: 120px;
 	padding: 20px 0px 20px 0px;
 }
 
+/* Styling for menu/links to sit right-justified with "Connect" 
+panel */
 #menu {
-	right: 100px;
+	right: 110px;
 	width: 270px;
 	padding-right: 0px;
+	text-align: right;
 }
 
+/* Spaces out link section of navbar */
 li {
 	padding: 0px 10px 0px 10px;
 }
 
+/* Section/page headings with spacing specific to browser size */
 h2 {
 	border-bottom-style: solid;
 	border-color: #dddddd;
@@ -331,6 +348,7 @@ h2 {
 	font-size: 22px;
 }
 
+/* Styling for Connect section heading */
 h3 {
 	text-align: center;
 	padding: 30px 0px 25px 0px;
@@ -339,11 +357,13 @@ h3 {
 	border-width: 2px;
 }
 
+/* Container for content on 980px resolution */
 #wrapper {
 	width: 730px;
 	margin: 0 auto 0 auto;
 }
 
+/* Main content floating to the left of connect panel */
 #about-me, #portfolio, #contact {
 	width: 368px;
 	float: left;
@@ -351,6 +371,7 @@ h3 {
 	padding: 15px 25px 0px 25px;
 }
 
+/* Connect panel floating to the right of main content area */
 #connect {
 	width: 190px;
 	float: right;
@@ -358,19 +379,25 @@ h3 {
 	padding: 0px 39px 0px 39px;
 }
 
+/* White space at bottom of "Portfolio" page content */
 #portfolio {
 	padding-bottom: 40px;
 }
 
+/* White space at bottom of "About" page content */
 #about-me {
 	padding-bottom: 30px;
 }
 
+/* Image sizing for portfolio images (this could probably be
+further specified as a class/ID, but I'm going to leave it as
+is for now :) */
 img {
 	width: 365px;
 	height: 273px;
 }
 
+/* Styling for profile picture on "About" page to sit above text */
 #profile-pic {
 	float: left;
 	width: 365px;
@@ -378,12 +405,14 @@ img {
 	margin: 25px 0px 15px 0px;
 }
 
+/* Social link image sizing */
 .social-img {
 	padding: 25px 0px 25px 0px;
 	width: 60px;
 	height: 60px;
 }
 
+/* Styling to fit contact form in content area */
 input[type=text], textarea {
 	clear: both;
 	font-size: 12px;
@@ -393,6 +422,7 @@ input[type=text], textarea {
 	padding: 5px;
 }
 
+/* Submit button */
 input[type=submit] {
 	font-size: 14px;
 	line-height: 20px;
@@ -400,16 +430,15 @@ input[type=submit] {
 	padding: 5px 20px 5px 20px;
 }
 
+/* Styling to fit portfolio images in content area */
 .portfolio-images-left, .portfolio-images-right {
+	float: left;
 	width: 365px;
 	height: 273px;
 	margin: 30px 0px 10px 0px;
 }
 
-.portfolio-images-left, .portfolio-images-right {
-	float: left;
-}
-
+/* Positioning of text overlay on portfolio images */
 .portfolio-images-text {
 	position: absolute;
 	bottom: 10px;
@@ -417,21 +446,25 @@ input[type=submit] {
 	padding: 10px 15px 10px 15px;
 }
 
+/* Styling for text overlay on portfolio iamges */
 h4 {
 	font-size: 16px;
 }
 
+/* Styling for text on the "About" page */
 p {
 	margin: 10px 0px 0px 0px;
 	line-height: 28px;
 }
 
+/* Styling specific to contact form fields */
 .contact-form {
 	font-size: 14px;
 	line-height: 16px;
 	margin: 20px 0px 0px 0px;
 }
 
+/* Trying to keep footer at bottom/full page width */
 footer {
 	bottom: -200px;
 	width: 100%;
@@ -444,6 +477,7 @@ footer {
 /* Width at 768px (Tablet) and below */
 @media screen and (max-width: 768px) {
 
+/* Background styling for navbar area */
 header, nav {
 	margin: 0px;
 	padding: 0px;
@@ -452,29 +486,33 @@ header, nav {
 	border-width: 2px;
 }
 
-#logo, #menu {
-	text-align: center;
-}
-
+/* Styling for logo to sit left-justified with main content area */
 #logo {
 	left: 20px;
 	padding: 20px 10px 20px 10px;
+	text-align: center;
 }
 
+/* Styling for menu/links to sit right-justified(ish.. per the example)
+with "Connect" panel */
 #menu {
 	right: 10px;
+	text-align: right;
 }
 
+/* Spaces out link section of navbar */
 li {
 	padding: 0px 10px 0px 10px;
 }
 
+/* Section/page headings with spacing specific to browser size */
 h2 {
 	border-bottom-style: solid;
 	border-color: #dddddd;
 	border-width: 3px;
 }
 
+/* Styling for Connect section heading */
 h3 {
 	text-align: left;
 	clear: both;
@@ -484,35 +522,43 @@ h3 {
 	border-width: 1px;
 }
 
+/* Container for content on 768px resolution */
 #wrapper {
 	width: 728px;
 	margin: 0 auto 0 auto;
 }
 
-#about-me, #portfolio, #contact, #connect {
+/* Main content sizing and spacing (full width) */
+#about-me, #portfolio, #contact {
 	width: 668px;
 	float: left;
-}
-
-#about-me, #portfolio, #contact {
 	margin: 50px 10px 10px 10px;
 	padding: 10px 20px 10px 20px;
 }
 
+/* Connect panel sizing and spacing (full width) */
 #connect {
+	width: 668px;
+	float: left;
 	margin: 20px 10px 10px 10px;
 	padding: 10px 20px 20px 20px;
 }
 
+/* White space at bottom of "Portfolio" page content */
 #portfolio {
 	padding-bottom: 20px;
 }
 
+/* Image sizing for portfolio images (this could probably be
+further specified as a class/ID, but I'm going to leave it as
+is for now :) */
 img {
 	width: 314px;
 	height: 235px;
 }
 
+/* Styling for profile picture on "About" page to float left
+of text (~50% of content area) */
 #profile-pic {
 	float: left;
 	width: 334px;
@@ -520,6 +566,7 @@ img {
 	margin: 26px 20px 0px 0px;
 }
 
+/* Social link image styling/sizing */
 .social-img {
 	float: left;
 	padding: 15px 5px 5px 5px;
@@ -527,6 +574,7 @@ img {
 	height: 48px;
 }
 
+/* Styling to fit contact form in content area */
 input[type=text], textarea {
 	clear: both;
 	font-size: 12px;
@@ -536,6 +584,7 @@ input[type=text], textarea {
 	padding: 5px;
 }
 
+/* Submit button */
 input[type=submit] {
 	font-size: 12px;
 	line-height: 18px;
@@ -543,22 +592,26 @@ input[type=submit] {
 	padding: 5px 20px 5px 20px;
 }
 
+/* Styling to fit portfolio images side-by-side in content area */
 .portfolio-images-left, .portfolio-images-right {
 	width: 314px;
 	height: 235px;
 	margin: 30px 0px 10px 0px;
 }
 
+/* Styling specific to left-size portfolio images */
 .portfolio-images-left {
 	float: left;
 	margin-left: 2px;
 }
 
+/* Styling specific to left-size portfolio images */
 .portfolio-images-right {
 	float: right;
 	margin-right: 2px;
 }
 
+/* Positioning of text overlay on portfolio images */
 .portfolio-images-text {
 	position: absolute;
 	bottom: 10px;
@@ -566,20 +619,24 @@ input[type=submit] {
 	padding: 10px 15px 10px 15px;
 }
 
+/* Styling for text overlay on portfolio iamges */
 h4 {
 	font-size: 16px;
 }
 
+/* Styling for text on the "About" page */
 p {
 	margin: 10px 0px 10px 0px;
 }
 
+/* Styling specific to contact form fields */
 .contact-form {
 	font-size: 12px;
 	line-height: 16px;
 	margin: 20px 0px 0px 0px;
 }
 
+/* Trying to keep footer at bottom/full page width */
 footer {
 	bottom: -200px;
 	width: 100%;
@@ -592,15 +649,17 @@ footer {
 /* Width at 640px (Cell Phone) and below */
 @media screen and (max-width: 640px) {
 
+/* Used position:static for #logo/#menu, but it drops top down
+significantly when used in this section. Not sure why? */
 header {
 	margin: 0px;
 	padding: 0px;
 	border-bottom-style: solid;
 	border-color: #dddddd;
 	border-width: 2px;
-
 }
 
+/* Drops menu/link section of navbar below logo/brand part of navbar */
 #logo, #menu {
 	text-align: center;
 	margin: 0px;
@@ -611,14 +670,18 @@ header {
 	line-height: 40px;
 }
 
+/* Styling to get rid of any padding on menu/links to fit page
+example */
 #menu {
 	padding: 0px;
 }
 
+/* Spaces out link section of navbar a bit more than usual */
 li {
 	padding: 0px 25px 0px 25px;
 }
 
+/* Section/page headings with spacing specific to browser size */
 h2 {
 	padding: 10px 0px 10px 0px;
 	border-bottom-style: solid;
@@ -626,6 +689,7 @@ h2 {
 	border-width: 2px;
 }
 
+/* Styling for Connect section heading */
 h3 {
 	text-align: left;
 	clear: both;
@@ -635,20 +699,24 @@ h3 {
 	border-width: 1px;
 }
 
+/* Font specifications for logo at 100% width in 640px */
 #logo {
 	font-size: 16px;
 	padding: 10px 0px 10px 0px;
 }
 
+/* Font sizes for navbar */
 #menu, nav {
 	font-size: 12px;
 }
 
+/* Container for content on 640px resolution */
 #wrapper {
 	width: 600px;
 	margin: 0 auto 0 auto;
 }
 
+/* Sizing for main content/connect panels */
 #about-me, #portfolio, #contact, #connect {
 	width: 540px;
 	float: left;
@@ -656,18 +724,23 @@ h3 {
 	padding: 10px 20px 10px 20px;
 }
 
+/* For styling specific to connect panel (below main content) */
 #connect {
-	width: 540px;
-	float: left;
 	margin-top: 10px;
 	padding: 10px 20px 10px 20px;
 }
 
+/* Image sizing for portfolio images (this could probably be
+further specified as a class/ID, but I'm going to leave it as
+is for now :) */
 img {
 	width: 538px;
 	height: 403px;
 }
 
+/* This picture is giant, but I wanted it to match the margins
+of the picture in the example, which was horizontal.
+Styling to fit profile picture to content area width */
 #profile-pic {
 	float: left;
 	width: 538px;
@@ -675,6 +748,7 @@ img {
 	margin: 20px 0px 0px 0px;
 }
 
+/* Social Link image styling for below-the-content panel */
 .social-img {
 	float: left;
 	padding: 15px 5px 5px 5px;
@@ -682,6 +756,7 @@ img {
 	height: 36px;
 }
 
+/* Fitting contact input areas to fit content area */
 input[type=text], textarea {
 	clear: both;
 	font-size: 12px;
@@ -691,6 +766,7 @@ input[type=text], textarea {
 	padding: 10px;
 }
 
+/* Submit button styling */
 input[type=submit] {
 	font-size: 12px;
 	line-height: 16px;
@@ -698,6 +774,7 @@ input[type=submit] {
 	padding: 5px 15px 5px 15px;
 }
 
+/* Larger portfolio pictures (set to mostly fill content area) */
 .portfolio-images-left, .portfolio-images-right {
 	float: left;
 	height: 403px;
@@ -705,23 +782,27 @@ input[type=submit] {
 	margin: 20px 0px 15px 0px;
 }
 
+/* Text overlay for larger portfolio pictures */
 .portfolio-images-text {
 	position: absolute;
 	bottom: 10px;
 	width: 508px;
 }
 
+/* Content spacing in about page */
 p {
 	float: left;
 	margin: 10px 0px 10px 0px;
 }
 
+/* Spacing in contact form */
 .contact-form {
 	font-size: 12px;
 	line-height: 16px;
 	margin: 20px 0px 0px 0px;
 }
 
+/* Trying to keep footer at bottom/full page width */
 footer {
 	bottom: -200px;
 	width: 100%;
