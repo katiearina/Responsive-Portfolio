@@ -464,7 +464,9 @@ p {
 	margin: 20px 0px 0px 0px;
 }
 
-/* Trying to keep footer at bottom/full page width */
+/* Trying to keep footer at bottom/full page width.
+Doesn't work on phone, but works on browser window at
+all required sizes. */
 footer {
 	bottom: -200px;
 	width: 100%;
@@ -636,7 +638,9 @@ p {
 	margin: 20px 0px 0px 0px;
 }
 
-/* Trying to keep footer at bottom/full page width */
+/* Trying to keep footer at bottom/full page width.
+Doesn't work on phone, but works on browser window at
+all required sizes. */
 footer {
 	bottom: -200px;
 	width: 100%;
@@ -807,7 +811,9 @@ p {
 	margin: 20px 0px 0px 0px;
 }
 
-/* Trying to keep footer at bottom/full page width */
+/* Trying to keep footer at bottom/full page width.
+Doesn't work on phone, but works on browser window at
+all required sizes. */
 footer {
 	bottom: -200px;
 	width: 100%;
